@@ -1,0 +1,60 @@
+.Nav {
+    /* overflow: hidden; */
+    background-color: wheat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+
+/* Style the left navigation */
+
+.Leftnav {
+    display: flex;
+}
+
+
+/* Style the right navigation */
+
+.Rightnav {
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    height: 100%;
+    gap: 10px;
+}
+
+.home,
+.about,
+.contact {
+    /* background-color: black; */
+    /* border-radius: 5px; */
+    /* Rounded corners */
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+    margin-right: 20px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+
+/* Responsive layout for small screens */
+
+@media screen and (max-width: 600px) {
+    .Nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .Rightnav {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}

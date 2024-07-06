@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Nav from './components/Nav';
+import './App.css'
+import './components/Nav.css'
+import img from './assets/juice.jpg'
+import Footer from './components/Footer';
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+
+        <div className ='App'>
+          <Nav/>
+          {/* <Footer/> */}
+          <div className = 'indexpage' >
+            <img src ={img}/>
+            <div className = 'text' >
+              <h1> Refreshingly Healthy, Delightfully Tasty </h1>
+              <h2> From classic orange to exotic blends, our <br /> juices are crafted using the freshest ingredients to ensure <br /> every sip bursts with flavor and nutrients. </h2>
+
+            </div>
+            <Footer/>
+          </div>
+         </div>
+
+    )
 }
 
-export default App;
+export default App
